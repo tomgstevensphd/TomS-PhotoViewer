@@ -11,4 +11,4 @@ IT WORKS: I have thousands of photos in my collection, and it will work on them 
 
 SOURCE CODE: I will include the source code for those who want to modify it for their own uses.  I would appreciate feedback about any improvements.  
 
-FUTURE: I would particularly like to add code to run video files (.mov especially) which could be mixed in with the photos.  Currently, it just skips them.
+FUTURE: I would particularly like to add code to run video files (.mov especially) which could be mixed in with the photos.  Currently, it just skips them. IF ANYONE CAN OFFER SUGGESTIONS ABOUT GETTING/INTEGRATING CODECS, PLEASE LET ME KNOW!
