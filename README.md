@@ -12,3 +12,5 @@ IT WORKS: I have thousands of photos in my collection, and it will work on them 
 SOURCE CODE: I will include the source code for those who want to modify it for their own uses.  I would appreciate feedback about any improvements.  
 
 FUTURE: I would particularly like to add code to run video files (.mov especially) which could be mixed in with the photos.  Currently, it just skips them. IF ANYONE CAN OFFER SUGGESTIONS ABOUT GETTING/INTEGRATING CODECS, PLEASE LET ME KNOW!
+
+The graphical interface for this program is LispWorks' CAPI You must however have LispWorks to run CAPI.  A personal version can be downloaded free from lispworks.com. You can run the program from the source code or compile it.
