@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Documentation:Command line - VideoLAN Wiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.20.7">
+<link rel="shortcut icon" href="https://images.videolan.org/images/icons/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.videolan.org/opensearch_desc.php" title="VideoLAN Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.videolan.org/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="VideoLAN Wiki Atom feed" href="https://wiki.videolan.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load.css">
+<style>.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: VideoLANwikidb:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: VideoLANwikidb:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_002.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: VideoLANwikidb:resourceloader:filter:minify-css:7:f29f747a68cdef699a6b0efd904ddda4 */</style>
+
+<script src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load.php"></script><script src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_006.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Documentation","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":100,"wgPageName":"Documentation:Command_line","wgTitle":"Command line","wgCurRevisionId":30498,"wgArticleId":6767,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Stubs","Documentation","GNU GPL Licensed pages","Wiki maintenance"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Documentation:Command_line","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":true,"previewDialog":false,"publish":false,"toc":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":true,"searchNs101":false,"searchNs102":false,"searchNs103":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: VideoLANwikidb:resourceloader:filter:minify-js:7:debb97d00295f76189384f470c7aa9f3 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script type="text/javascript" src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_003.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]-->		<style type="text/css">
+		li#pt-openidlogin {
+		  background: url(/extensions/OpenID/skin/icons/openid-inputicon.png) top left no-repeat;
+		  padding-left: 20px;
+		  text-transform: none;
+		}
+		</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-100 ns-subject page-Documentation_Command_line skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading"><span dir="auto">Documentation:Command line</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From VideoLAN Wiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><div class="widebox" style="text-align: center;"> Help VideoLAN by adding to this page!<br>  <b><a href="https://wiki.videolan.org/Special:CreateAccount/" title="Special:CreateAccount">Create an account</a></b> to start editing, and then <span class="plainlinks"><b><a rel="nofollow" class="external text" href="https://wiki.videolan.org/index.php?title=Command_line&amp;action=edit">click here</a></b></span> to add to this article.</div>
+<p><br>
+</p>
+<table style="background-color: white; margin: 2.8em 0 0 3.2em; padding: 1em 1em 1.5em 1em;" align="right" width="20%">
+<tbody><tr>
+<td>
+<div class="noprint tocsidebar" style="font-size:80%;border:1px solid #aaaaaa;padding:5px">
+<table border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<th><big><a href="https://wiki.videolan.org/Documentation:User_Guide/" title="Documentation:User Guide">VLC User Guide</a></big><br>
+</th></tr>
+<tr>
+<th><br>
+</th></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Quick_Start_Guide/" title="Documentation:Quick Start Guide">Quick Start Guide</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Installing_VLC/" title="Documentation:Installing VLC">Installing VLC</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:History/" title="Documentation:History">History</a>
+</td></tr>
+<tr>
+<th>Usage
+</th></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Interface/" title="Documentation:Interface">Interface</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Open_Media/" title="Documentation:Open Media">Open Media</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Audio/" title="Documentation:Audio">Audio</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Video/" title="Documentation:Video">Video</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Playback/" title="Documentation:Playback">Playback</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Playlist/" title="Documentation:Playlist">Playlist</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Subtitles/" title="Documentation:Subtitles">Subtitles</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Video_and_Audio_Filters/" title="Documentation:Video and Audio Filters">Video and Audio Filters</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Snapshots/" title="Documentation:Snapshots">Snapshots</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Hotkeys/" title="Documentation:Hotkeys">Hotkeys</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Uninstalling_VLC/" title="Documentation:Uninstalling VLC">Uninstalling VLC</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/VSG:Main/" title="VSG:Main">Troubleshooting</a>
+</td></tr>
+<tr>
+<th>Advanced usage
+</th></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:WebPlugin/" title="Documentation:WebPlugin">Using VLC inside a webpage</a>
+</td></tr>
+<tr>
+<td><strong class="selflink">Command line</strong>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Alternative_Interfaces/" title="Documentation:Alternative Interfaces">Alternative Interfaces</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Misc/" title="Documentation:Misc">Misc</a>
+</td></tr>
+<tr>
+<th><br> Appendix
+</th></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Building_Pages_for_the_HTTP_Interface/" title="Documentation:Building Pages for the HTTP Interface">Building Pages for the HTTP Interface</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Format_String/" title="Documentation:Format String">Format String</a>
+</td></tr>
+<tr>
+<td><a href="https://wiki.videolan.org/Documentation:Building_Lua_Playlist_Scripts/" title="Documentation:Building Lua Playlist Scripts">Building Lua Playlist Scripts</a>
+</td></tr>
+<tr>
+<td>
+</td></tr>
+<tr>
+<td align="left"><small><a href="https://wiki.videolan.org/Template:Documentation_TOC/" title="Template:Documentation TOC">View this alone</a></small>
+</td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Use_the_command_line"><span class="tocnumber">1</span> <span class="toctext">Use the command line</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Getting_help"><span class="tocnumber">2</span> <span class="toctext">Getting help</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Opening_streams"><span class="tocnumber">3</span> <span class="toctext">Opening streams</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Opening_a_file"><span class="tocnumber">3.1</span> <span class="toctext">Opening a file</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Opening_a_DVD_or_VCD.2C_or_an_audio_CD"><span class="tocnumber">3.2</span> <span class="toctext">Opening a DVD or VCD, or an audio CD</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Receiving_a_network_stream"><span class="tocnumber">3.3</span> <span class="toctext">Receiving a network stream</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Modules_selection"><span class="tocnumber">4</span> <span class="toctext">Modules selection</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Stream_Output"><span class="tocnumber">5</span> <span class="toctext">Stream Output</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Other_Options"><span class="tocnumber">6</span> <span class="toctext">Other Options</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Audio_options"><span class="tocnumber">6.1</span> <span class="toctext">Audio options</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Video_options"><span class="tocnumber">6.2</span> <span class="toctext">Video options</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Desktop.2FScreen_grab_options"><span class="tocnumber">6.3</span> <span class="toctext">Desktop/Screen grab options</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Playlist_options"><span class="tocnumber">6.4</span> <span class="toctext">Playlist options</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Network_options"><span class="tocnumber">6.5</span> <span class="toctext">Network options</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#CPU_options"><span class="tocnumber">6.6</span> <span class="toctext">CPU options</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Miscellaneous_options"><span class="tocnumber">6.7</span> <span class="toctext">Miscellaneous options</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Item-specific_options"><span class="tocnumber">7</span> <span class="toctext">Item-specific options</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Filters"><span class="tocnumber">8</span> <span class="toctext">Filters</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Deinterlacing_video_filter"><span class="tocnumber">8.1</span> <span class="toctext">Deinterlacing video filter</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Invert_video_filter"><span class="tocnumber">8.2</span> <span class="toctext">Invert video filter</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Image_properties_filter"><span class="tocnumber">8.3</span> <span class="toctext">Image properties filter</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Wall_video_filter"><span class="tocnumber">8.4</span> <span class="toctext">Wall video filter</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Video_transformation_filter"><span class="tocnumber">8.5</span> <span class="toctext">Video transformation filter</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Distort_video_filter"><span class="tocnumber">8.6</span> <span class="toctext">Distort video filter</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Clone_video_filter"><span class="tocnumber">8.7</span> <span class="toctext">Clone video filter</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Crop_video_filter"><span class="tocnumber">8.8</span> <span class="toctext">Crop video filter</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Motion_blur_filter"><span class="tocnumber">8.9</span> <span class="toctext">Motion blur filter</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Video_pictures_blending"><span class="tocnumber">8.10</span> <span class="toctext">Video pictures blending</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Video_scaling_filter"><span class="tocnumber">8.11</span> <span class="toctext">Video scaling filter</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#Subpictures_Filters"><span class="tocnumber">9</span> <span class="toctext">Subpictures Filters</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="#Time_display_sub_filter"><span class="tocnumber">9.1</span> <span class="toctext">Time display sub filter</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Marquee_display_sub_filter"><span class="tocnumber">9.2</span> <span class="toctext">Marquee display sub filter</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Logo_video_filter"><span class="tocnumber">9.3</span> <span class="toctext">Logo video filter</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="Use_the_command_line"> Use the command line </span></h2>
+<p><b>TODO: completely outdated</b> 
+</p><p>All standard operations of VLC should be available from the GUI. 
+However, some complex operations can only be done from the command line 
+and there are situations in which you don't need or want a GUI. Here is 
+the complete description of VLC's command line and how to use it. 
+</p><p>You need to be quite comfortable with command line usage to use this. 
+</p>
+<pre>Note: Windows users have to use the <i>--option-name="value"</i> syntax instead of the <i>--option-name value</i> syntax.
+</pre>
+<h2> <span class="mw-headline" id="Getting_help"> Getting help </span></h2>
+<p>VLC uses a modular structure. The core mainly manages communication 
+between modules. All the multimedia processing is done by modules. There
+ are input modules, demultiplexers, decoders, video output modules, ... 
+</p><p>This chapter will only describe the "general" options, i.e. the 
+core options. Each module adds new options. For example, the HTTP input 
+module will add options for caching, proxy, authentication, ... 
+</p><p>By using <b>vlc --help</b>, you will get the basic core options. <b>vlc --longhelp</b> will give all the basic options (core + modules). Adding <b>--advanced</b> will give the "advanced options" (for advanced users). So <b>vlc --longhelp --advanced</b> will give you all options. You can also append <b>--help-verbose</b> if you want more detailed help. 
+</p><p>Also, you might want to get debug informations. To do this, use <b>-v</b> or <b>-vv</b> (this will show lower severity messages). If your console supports it, you can add <b>--color to get messages in color.</b> 
+</p>
+<h2> <span class="mw-headline" id="Opening_streams"> Opening streams </span></h2>
+<p>The following commands start VLC and start reading the given element(s):
+</p>
+<h3> <span class="mw-headline" id="Opening_a_file"> Opening a file </span></h3>
+<p>Start VLC with: 
+</p>
+<pre>% <b>vlc my_file</b>
+</pre>
+<p>VLC should be able to recognize the file type. If it does not, you can force demultiplexer and decoder (see below). 
+</p><p>A list of all video and audio codecs supported by VLC is available on the <a rel="nofollow" class="external text" href="http://www.videolan.org/vlc/features.html">VLC features list</a>. 
+</p>
+<h3> <span class="mw-headline" id="Opening_a_DVD_or_VCD.2C_or_an_audio_CD"> Opening a DVD or VCD, or an audio CD </span></h3>
+<p>Start VLC with: 
+</p><p>For a DVD with menus: 
+</p>
+<pre>% <b>vlc dvd://[device][@raw_device][@[title][:[chapter][:angle]]]</b>
+</pre>
+<p>In most cases, <b>vlc dvd://</b> or <b>vlc dvd://[device]</b> will do.
+</p>
+<ul><li> On GNU/Linux [device] is the path to the block device: e.g., <b>vlc dvd:///dev/dvd</b>.
+</li><li> On Windows, [device] is the drive letter with <b>/</b> and <b>:/</b>: e.g., <b>vlc dvd:///D:/</b>.
+</li></ul>
+<p>or 
+</p><p>(DVD without menus): 
+</p>
+<pre>% <b>vlc dvdsimple://[device][@raw_device][@[title][:[chapter][:angle]]]</b>
+</pre>
+<p>or 
+</p><p>(VCD): 
+</p>
+<pre>% <b>vlc vcd://[device][@{E|P|E|T|S}[number]]</b>
+</pre>
+<p>or 
+</p><p>(Audio CD): 
+</p>
+<pre>% <b>vlc cdda://[device][@[track]]</b>
+</pre>
+<h3> <span class="mw-headline" id="Receiving_a_network_stream"> Receiving a network stream </span></h3>
+<p>To receive an unicast RTP/UDP stream (sent by VLC's stream output), start VLC with: 
+</p>
+<pre>% <b>vlc  rtp://@:5004</b>
+</pre>
+<p>If 5004 is the port to which packets are sent. 1234 is another commonly used port number. you use the default port (1234), <b>vlc rtp://</b> will do. For more information, look at the Streaming Howto. 
+</p><p>To receive an multicast UDP/RTP stream (sent by VLC's stream output), start VLC with: 
+</p>
+<pre>% <b>vlc rtp://@multicast_address:port</b>
+</pre>
+<p>To receive a SSM (source specific multicast) stream, you can use: 
+</p>
+<pre>% <b>vlc rtp://server_address@multicast_address:port</b>
+</pre>
+<p>This only works on OSs that support SSM (Windows XP and Linux). 
+</p><p>To receive a HTTP stream, start VLC with: 
+</p>
+<pre>% <b>vlc <a rel="nofollow" class="external free" href="http://www.example.org/your_file.mpg">http://www.example.org/your_file.mpg</a></b>
+</pre>
+<p>To receive a RTSP stream, start VLC with:&lt;/para&gt; 
+</p>
+<pre>% <b>vlc rtsp://www.example.org/your_stream</b>
+</pre>
+<h2> <span class="mw-headline" id="Modules_selection"> Modules selection </span></h2>
+<p>VLC always tries to select the most appropriate interface, input and 
+output modules, among the ones available on the system, according to the
+ stream it is given to read. However, you may wish to force the use of a
+ specific module with the following options. 
+</p>
+<ul><li><b>--intf &lt;module&gt;</b> allows you to select the interface module. 
+</li><li><b>--extraintf &lt;module&gt;</b> allows you to select extra 
+interface modules that will be launched in addition to the main one. 
+This is mainly useful for special <i>control</i> interfaces, like HTTP, RC (Remote Control), ... (see below) 
+</li><li><b>--aout &lt;module&gt;</b> allows you to select the audio output module. 
+</li><li><b>--vout &lt;module&gt;</b> allows you to select the video output module. 
+</li><li><b>--memcpy &lt;module&gt;</b> allows you to choose a memory copy module. You should probably never touch that.
+</li></ul>
+<p>You can get a listing of the available modules by using <b>vlc -l</b> 
+</p>
+<h2> <span class="mw-headline" id="Stream_Output"> Stream Output </span></h2>
+<p>The Stream output system allows vlc to become a streaming server. 
+</p><p>For more details on the stream output system, please have a look at the <a href="https://wiki.videolan.org/Documentation:Streaming_HowTo/" title="Documentation:Streaming HowTo">Streaming HowTo</a>. 
+</p><p><br> 
+</p>
+<h2> <span class="mw-headline" id="Other_Options"> Other Options </span></h2>
+<h3> <span class="mw-headline" id="Audio_options"> Audio options </span></h3>
+<ul><li><b>--noaudio</b> disables audio output. Note that if you are 
+streaming (ex: to a file) this has no effect (streaming copies the audio
+ verbatim). Use --sout-xxx instead (ex: --no-sout-audio) 
+</li><li><b>--mono</b> forces VLC to treat the stream in mono audio. 
+</li><li><b>--volume &lt;integer&gt;</b> sets the level of audio output (between 0 and 1024). Also only applies to local playback (like --noaudio). 
+</li><li><b>--aout-rate &lt;integer&gt;</b> sets the audio output frequency (Hz). By default, VLC will try to autodetect this. 
+</li><li><b>--desync &lt;integer&gt;</b> compensates desynchronization 
+of audio (ms). (If audio and video streams are not synchronized, use 
+this setting to delay the audio stream) 
+</li><li><b>--audio-filter &lt;string&gt;</b> adds audio filters to the 
+processing chain. Available filters are visual (visualizer with spectrum
+ analyzer and oscilloscope), headphone (virtual headphone patialization)
+ and normalizer (volume normalizer)
+</li></ul>
+<h3> <span class="mw-headline" id="Video_options"> Video options </span></h3>
+<ul><li><b>--no-video</b> disables video output. 
+</li><li><b>--grayscale</b> turns video output into grayscale mode. 
+</li><li><b>--fullscreen</b> ( or <b>-f</b>) sets fullscreen video. 
+</li><li><b>--nooverlay</b> disables <a href="https://wiki.videolan.org/Hardware_acceleration/" title="Hardware acceleration">hardware acceleration</a> for the video output. 
+</li><li><b>--width, --height &lt;integer&gt;</b> sets the video window dimensions. By default, the video window size will be adjusted to match the video dimensions. 
+</li><li><b>--start-time &lt;integer&gt;</b> starts the video here; the integer is the number of seconds from the beginning (e.g. 1:30 is written as 90) 
+</li><li><b>--stop-time &lt;integer&gt;</b> stops the video here; the integer is the number of seconds from the beginning (e.g. 1:30 is written as 90) 
+</li><li><b>--zoom &lt;float&gt;</b> adds a zoom factor. 
+</li><li><b>--aspect-ratio &lt;mode&gt;</b> forces source aspect ratio. Modes are 4x3, 16x9, ... 
+</li><li><b>--spumargin &lt;integer&gt;</b> forces SPU subtitles postion. 
+</li><li><b>--video-filter &lt;string&gt;</b> adds video filters to the processing chain. You can add several filters, separated by commas 
+</li><li><b>--video-splitter &lt;string&gt;</b> adds video splitters to the processing chain. (wall, panoramix, clone)
+</li><li><b>--sub-filter &lt;string&gt;</b> adds video subpictures filter to the processing chain.
+</li></ul>
+<h3> <span class="mw-headline" id="Desktop.2FScreen_grab_options"> Desktop/Screen grab options </span></h3>
+<p>You can see the various options for "grabbing the desktop" (VLC's built-in screen grabber capture device) by using the GUI. See <a rel="nofollow" class="external free" href="http://forum.videolan.org/viewtopic.php?f=4&amp;t=46971">http://forum.videolan.org/viewtopic.php?f=4&amp;t=46971</a> 
+</p>
+<h3> <span class="mw-headline" id="Playlist_options"> Playlist options </span></h3>
+<ul><li><b>--random</b> plays files randomly forever. 
+</li><li><b>--loop</b> loops playlist on end. 
+</li><li><b>--repeat</b> repeats current item until another item is forced 
+</li><li><b>--play-and-stop</b> stops the playlist after each played item.
+</li><li><b>--no-repeat --no-loop</b> prevents the video from being executed again. (Useful when want to encode a file)
+</li></ul>
+<h3> <span class="mw-headline" id="Network_options"> Network options </span></h3>
+<ul><li><b>--server-port &lt;integer&gt;</b> sets server port. 
+</li><li><b>--iface &lt;string&gt;</b> specifies the network interface to use. 
+</li><li><b>--iface-addr &lt;string&gt;</b> specifies your network interface IP address. 
+</li><li><b>--mtu &lt;integer&gt;</b> specifies the MTU of the network interface. 
+</li><li><b>--ipv6</b> forces IPv6. 
+</li><li><b>--ipv4</b> forces IPv4.
+</li></ul>
+<h3> <span class="mw-headline" id="CPU_options"> CPU options </span></h3>
+<p>You should probably not touch these options unless you know what you are doing. 
+</p>
+<ul><li><b>--nommx</b> disables the use of MMX CPU extensions. 
+</li><li><b>--no3dn</b> disables the use of 3D Now! CPU extensions. 
+</li><li><b>--nommxext</b> disables the use of MMX Ext CPU extensions. 
+</li><li><b>--nosse</b> disables the use of SSE CPU extensions. 
+</li><li><b>--noaltivec</b> disables the use of Altivec CPU extensions.
+</li></ul>
+<h3> <span class="mw-headline" id="Miscellaneous_options"> Miscellaneous options </span></h3>
+<ul><li><b>--quiet</b> deactivates all console messages. 
+</li><li><b>--color</b> displays color messages. 
+</li><li><b>--search-path &lt;string&gt;</b> specifies interface default search path. 
+</li><li><b>--plugin-path &lt;string&gt;</b> specifies plugin search path. 
+</li><li><b>--no-plugins-cache</b> disables the plugin cache (plugins cache speeds up startup) 
+</li><li><b>--dvd &lt;string&gt;</b> specifies the default DVD device. 
+</li><li><b>--vcd &lt;string&gt;</b> specifies the default VCD device. 
+</li><li><b>--program &lt;integer&gt;</b> specifies program (SID) (for streams with several programs, like satellite ones). 
+</li><li><b>--audio-type &lt;integer&gt;</b> specifies the default audio type to use with dvds. 
+</li><li><b>--audio-channel &lt;integer&gt;</b> specifies the default audio channel to use with dvds. 
+</li><li><b>--spu-channel &lt;integer&gt;</b> specifies the default subtitle channel to use with dvds. 
+</li><li><b>--version</b> gives you information about the current VLC version. 
+</li><li><b>--module &lt;module&gt; </b> displays help about specified module. (Shortcut: <b>-p</b>)
+</li></ul>
+<h2> <span class="mw-headline" id="Item-specific_options"> Item-specific options </span></h2>
+<p>There are many options that are related to items (like <b>--novideo</b>, <b>--codec</b>, <b>--fullscreen</b>). 
+</p><p>For all of these, you have the possibility to make them 
+item-specific, using ":" instead of "--" and putting the option just 
+after the concerned item. 
+</p><p>Examples: 
+</p>
+<pre>% <b>vlc file1.mpg&nbsp;:fullscreen file2.mpg</b>
+</pre>
+<p>will play file1.mpg in fullscreen mode and file2.mpg in the default mode (which is generally no fullscreen), whereas 
+</p>
+<pre>% <b>vlc --fullscreen file1.mpg file2.mpg</b>
+</pre>
+<p>will play both files in fullscreen mode 
+</p>
+<pre>% <b>vlc --fullscreen file1.mpg&nbsp;:sub-file=file1.srt&nbsp;:no-fullscreen file2.mpg&nbsp;:filter=distort</b>
+</pre>
+<p>will play file1.mpg in windowed (no-fullscreen) mode with the 
+subtitles file file1.srt and will play file2.mpg with video filter 
+distort enabled in fullscreen mode (item-specific options override 
+global options).
+</p><p><br>
+</p>
+<h2> <span class="mw-headline" id="Filters"> Filters </span></h2>
+<p>These are the old style VLC filters. They only apply to on screen 
+display and thus cannot be streamed. However, on version 1.1.11 you are 
+still able to apply these filters in <i>transcode</i> module using parameter <i>vfilter</i>. More information can be found on <a rel="nofollow" class="external text" href="http://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_Streaming_Using_the_Command_Line#vfilter">Advanced Streaming Using the Command Line</a>.
+</p>
+<h3> <span class="mw-headline" id="Deinterlacing_video_filter"> Deinterlacing video filter </span></h3>
+<p>Module name: <b>deinterlace</b> 
+</p>
+<ul><li><b>--deinterlace-mode {discard,blend,mean,bob,linear,x,yadif,yadif (2x),phosophor,ivtc}</b> choose a deinterlacing mode.
+</li></ul>
+<h3> <span class="mw-headline" id="Invert_video_filter"> Invert video filter </span></h3>
+<p>Module name: <b>invert</b> 
+</p>
+<h3> <span class="mw-headline" id="Image_properties_filter"> Image properties filter </span></h3>
+<p>Module name: <b>adjust</b> 
+</p>
+<ul><li><b>--contrast &lt;float&gt;</b> Image contrast in the 0-2 range. 
+</li><li><b>--brightness &lt;float&gt;</b> Image brightness in the 0-2 range. 
+</li><li><b>--hue &lt;integer&gt;</b> Image hue in the 0-360 range. 
+</li><li><b>--saturation &lt;float&gt;</b> Image saturation in the 0-3 range. 
+</li><li><b>-gamma &lt;float&gt;</b> Image gamma in the 0-10 range.
+</li></ul>
+<h3> <span class="mw-headline" id="Wall_video_filter"> Wall video filter </span></h3>
+<p>Module name: <b>wall</b> 
+</p><p>This filter splits the output in several windows. 
+</p>
+<ul><li><b>--wall-cols &lt;integer&gt;</b> Number of columns. 
+</li><li><b>--wall-rows &lt;integer&gt;</b> Number of rows. 
+</li><li><b>--wall-active &lt;string&gt;</b> Select the windows you want to display. To select windows 2 and 4 you would write <b>--wall-active 2,4</b>. When this option isn't specified, all windows are displayed.
+</li></ul>
+<h3> <span class="mw-headline" id="Video_transformation_filter"> Video transformation filter </span></h3>
+<p>Module name: <b>transform</b> 
+</p>
+<ul><li><b>--transform-type {90,180,270,hflip,vflip}</b> Select rotation angle or symmetry.
+</li></ul>
+<h3> <span class="mw-headline" id="Distort_video_filter"> Distort video filter </span></h3>
+<p>Module name: <b>distort</b> 
+</p>
+<h3> <span class="mw-headline" id="Clone_video_filter"> Clone video filter </span></h3>
+<p>This filter clones the output window. 
+</p><p>Module name: <b>clone</b> 
+</p>
+<ul><li><b>--clone-count &lt;integer&gt;</b> Number of clones. 
+</li><li><b>--clone-vout-list &lt;string&gt;</b> Comma separated string of video output modules.
+</li></ul>
+<h3> <span class="mw-headline" id="Crop_video_filter"> Crop video filter </span></h3>
+<p>Module name: <b>crop</b> 
+</p>
+<ul><li><b>--crop-geometry &lt;string&gt;</b> Set the geometry of the 
+zone to crop. This is set as &lt;width&gt; x &lt;height&gt; + &lt;left 
+offset&gt; + &lt;top offset&gt;. 
+</li><li><b>--autocrop</b> Enable automatic black border cropping.
+</li></ul>
+<h3> <span class="mw-headline" id="Motion_blur_filter"> Motion blur filter </span></h3>
+<p>Module name: <b>motionblur</b> 
+</p>
+<ul><li><b>blur-factor &lt;integer&gt;</b> Blur factor in the 1-127 range.
+</li></ul>
+<h3> <span class="mw-headline" id="Video_pictures_blending"> Video pictures blending </span></h3>
+<p>Module name: <b>blend</b> 
+</p>
+<h3> <span class="mw-headline" id="Video_scaling_filter"> Video scaling filter </span></h3>
+<p>Module name: <b>scale</b> 
+</p><p><br>
+</p>
+<h2> <span class="mw-headline" id="Subpictures_Filters"> Subpictures Filters </span></h2>
+<p>These are the new VLC filters. They can be streamed. 
+</p>
+<h3> <span class="mw-headline" id="Time_display_sub_filter"> Time display sub filter </span></h3>
+<p>Module name: <b>time</b> 
+</p>
+<ul><li><b>--time-format &lt;string&gt;</b> Time format string. You can 
+use the following special characters&nbsp;%Y = year,&nbsp;%m = 
+month,&nbsp;%d = day,&nbsp;%H = hour,&nbsp;%M = minute,&nbsp;%S = 
+second. 
+</li><li><b>--time-x &lt;integer&gt;</b> X offset from the left in pixels. 
+</li><li><b>--time-y &lt;integer&gt;</b> Y offset from the top in pixels.
+</li></ul>
+<h3> <span class="mw-headline" id="Marquee_display_sub_filter"> Marquee display sub filter </span></h3>
+<p>Module name: <b>marq</b> 
+</p>
+<ul><li><b>--marq-marquee &lt;string&gt;</b> Marquee text to display. 
+</li><li><b>--marq-x &lt;integer&gt;</b> X offset from the left in pixels. 
+</li><li><b>--marq-y &lt;integer&gt;</b> Y offset from the top in pixels. 
+</li><li><b>--marq-timeout &lt;timeout&gt;</b> Defines the time the marquee must remain displayed in milliseconds. Default value is 0 (remain forever).
+</li></ul>
+<h3> <span class="mw-headline" id="Logo_video_filter"> Logo video filter </span></h3>
+<p>Module name: <b>logo</b> 
+</p><p>This filter can be used both as an old style filter or a subpictures filter. 
+</p>
+<ul><li><b>--logo-file &lt;string&gt;</b> Full path of the PNG file to use. 
+</li><li><b>--logo-x &lt;integer&gt;</b> X offset from the left in pixels. 
+</li><li><b>--logo-y &lt;integer&gt;</b> Y offset from the top in pixels. 
+</li><li><b>--logo-transparency &lt;integer&gt;</b> You can set the logo transparency value here (from 0 for full transparency to 255 for full opacity).
+</li></ul>
+<p>Note: You can move the logo by left-clicking on it. 
+</p><p><br>
+</p><p><br>
+</p>
+<table class="widebox" style="border:solid #999 1px;background:#E0E8F8;font-size:0.9em;margin-top: 30px; clear: both;" cellpadding="3" cellspacing="2">
+<tbody><tr>
+<td align="center">This page is part of official VLC media player <a href="https://wiki.videolan.org/Documentation:Documentation/" title="Documentation:Documentation">Documentation</a> (<a href="https://wiki.videolan.org/Documentation:User_Guide/" title="Documentation:User Guide">User Guide</a> • <a href="https://wiki.videolan.org/Documentation:Streaming_HowTo/" title="Documentation:Streaming HowTo">Streaming HowTo</a> • <a href="https://wiki.videolan.org/Hacker_Guide/" title="Hacker Guide">Hacker's Guide</a> • <a href="https://wiki.videolan.org/Documentation:Modules/" title="Documentation:Modules">Modules</a>)
+<p>Please read the <a href="https://wiki.videolan.org/Documentation:EditingGuidelines/" title="Documentation:EditingGuidelines">Documentation Editing Guidelines</a> before you edit the documentation
+</p>
+</td></tr>
+<tr>
+<td align="center"><b>Permission is granted to copy, distribute and/or modify this document under the terms of the <a rel="nofollow" class="external text" href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</b>
+</td></tr>
+<tr>
+<td>
+</td></tr></tbody></table>
+<p>This page contains entries which need some work
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 162/1000000
+Preprocessor generated node count: 280/1000000
+Post‐expand include size: 5259/2097152 bytes
+Template argument size: 34/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key VideoLANwikidb:pcache:idhash:6767-0!*!0!!en!*!* and timestamp 20160219141510 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="https://wiki.videolan.org/index.php?title=Documentation:Command_line&amp;oldid=30498">https://wiki.videolan.org/index.php?title=Documentation:Command_line&amp;oldid=30498</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.videolan.org/Special:Categories/" title="Special:Categories">Categories</a>: <ul><li><a href="https://wiki.videolan.org/Category:Stubs/" title="Category:Stubs">Stubs</a></li><li><a href="https://wiki.videolan.org/Category:Documentation/" title="Category:Documentation">Documentation</a></li><li><a href="https://wiki.videolan.org/Category:GNU_GPL_Licensed_pages/" title="Category:GNU GPL Licensed pages">GNU GPL Licensed pages</a></li><li><a href="https://wiki.videolan.org/Category:Wiki_maintenance/" title="Category:Wiki maintenance">Wiki maintenance</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="https://wiki.videolan.org/index.php?title=Special:UserLogin&amp;returnto=Documentation%3ACommand+line" title="Log in to edit pages [alt-shift-o]" accesskey="o">Log in</a></li>
+		<li id="pt-openidlogin"><a href="https://wiki.videolan.org/index.php?title=Special:OpenIDLogin&amp;returnto=Documentation:Command_line">Login with OpenID</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-documentation" class="selected"><span><a href="https://wiki.videolan.org/Documentation:Command_line/">Documentation</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://wiki.videolan.org/index.php?title=Documentation_Talk:Command_line&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="https://wiki.videolan.org/Documentation:Command_line/">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="https://wiki.videolan.org/index.php?title=Documentation:Command_line&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://wiki.videolan.org/index.php?title=Documentation:Command_line&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/index.php" id="searchform">
+				<div>
+			<input placeholder="Search" autocomplete="off" name="search" title="Search VideoLAN Wiki [alt-shift-f]" accesskey="f" id="searchInput" type="search">			<input name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" type="submit">			<input name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" type="submit">					<input name="title" value="Special:Search" type="hidden">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/skins/common/images/vlc_wiki.png);" href="https://wiki.videolan.org/Main_Page/" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- Help / Documentation -->
+<div class="portal" id="p-Help_.2F_Documentation">
+	<h5>Help / Documentation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Documentation"><a href="https://wiki.videolan.org/Documentation:Documentation/">Documentation</a></li>
+			<li id="n-VLC-Support-Guide"><a href="https://wiki.videolan.org/VSG:Main/">VLC Support Guide</a></li>
+			<li id="n-Forum"><a href="https://forum.videolan.org/" rel="nofollow">Forum</a></li>
+			<li id="n-Knowledge-Base"><a href="https://wiki.videolan.org/Knowledge_Base/">Knowledge Base</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Help / Documentation -->
+
+<!-- Development -->
+<div class="portal" id="p-Development">
+	<h5>Development</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Developers-Corner"><a href="https://wiki.videolan.org/VLC_Developers_Corner/">Developers Corner</a></li>
+			<li id="n-x264-development"><a href="https://wiki.videolan.org/X264/">x264 development</a></li>
+			<li id="n-Join-the-project"><a href="https://wiki.videolan.org/Help_VideoLAN/">Join the project</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Development -->
+
+<!-- VideoLAN wiki -->
+<div class="portal" id="p-VideoLAN_wiki">
+	<h5>VideoLAN wiki</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage"><a href="https://wiki.videolan.org/Main_Page/" title="Visit the main page [alt-shift-z]" accesskey="z">Main Page</a></li>
+			<li id="n-About-VideoLAN"><a href="https://wiki.videolan.org/VideoLAN/">About VideoLAN</a></li>
+			<li id="n-VLC-media-player"><a href="https://wiki.videolan.org/VLC_media_player/">VLC media player</a></li>
+			<li id="n-recentchanges"><a href="https://wiki.videolan.org/Special:RecentChanges/" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-Rules"><a href="https://wiki.videolan.org/VideoLAN_Wiki:Rules/">Rules</a></li>
+			<li id="n-Sandbox"><a href="https://wiki.videolan.org/Sandbox/">Sandbox</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /VideoLAN wiki -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="https://wiki.videolan.org/Special:WhatLinksHere/Documentation:Command_line/" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="https://wiki.videolan.org/Special:RecentChangesLinked/Documentation:Command_line/" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="https://wiki.videolan.org/Special:SpecialPages/" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="https://wiki.videolan.org/index.php?title=Documentation:Command_line&amp;oldid=30498" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 22 November 2015, at 08:45.</li>
+											<li id="footer-info-viewcount">This page has been accessed 136,324 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wiki.videolan.org/VideoLAN_Wiki:Privacy_policy/" title="VideoLAN Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://wiki.videolan.org/VideoLAN_Wiki:About/" title="VideoLAN Wiki:About">About VideoLAN Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="https://wiki.videolan.org/VideoLAN_Wiki:General_disclaimer/" title="VideoLAN Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" height="31" width="88"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_002.php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest"], null, true);
+}</script><script type="text/javascript" src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_005.php"></script>
+<script src="Documentation%20Command%20line%20-%20VideoLAN%20Wiki_files/load_004.php"></script>
+<!-- Served in 0.201 secs. -->
+	
+
+
+<div class="suggestions" style="display: none; font-size: 9.33333px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body><!-- Cached 20160219141510 --></html>
